@@ -1,0 +1,341 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h2 {
+  color: #333;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* NavBar */
+nav {
+  background-color: #007bff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* SearchSection */
+.search-section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-section select, .search-section button {
+  margin: 10px;
+}
+
+/* SpecializationSection */
+.specialization-section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.specializations {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.specialization-card {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+}
+
+/* MedicalSpecialistsSection */
+.medical-specialists-section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.specialists {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.specialist-card {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.specialist-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+/* NewsSection */
+.news-section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.news-card {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-card h3 {
+  padding: 10px;
+}
+
+.news-card p {
+  padding: 0 10px 10px 10px;
+}
+
+/* FAQSection */
+.faq-section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+  margin: 10px 0;
+}
+
+.faq-item h3 {
+  margin: 0;
+}
+
+/* DownloadAppSection */
+.download-app-section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.app-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.app-buttons button {
+  margin: 0 10px;
+}
+
+/* MedicalCenterList */
+.medical-center-list {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.medical-center-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.medical-center-item h2 {
+  margin: 0;
+}
+
+.medical-center-item p {
+  margin: 5px 0;
+}
+
+/* BookingForm */
+.booking-form {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.booking-form input {
+  margin: 10px;
+}
+
+/* MyBookings */
+.my-bookings {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.booking-item h2 {
+  margin: 0;
+}
+
+.booking-item p {
+  margin: 5px 0;
+}
+
+/* Carousel */
+.carousel {
+  padding: 20px;
+  margin: 20px;
+}
+
+/* SearchResultsPage */
+.search-results-page {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.centers-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.center-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-info h3 {
+  margin: 0;
+}
+
+/* BookingPage */
+.booking-page {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* MyBookingsPage */
+.my-bookings-page {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h2 {
+  color: #333;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

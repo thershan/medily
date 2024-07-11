@@ -1,0 +1,35 @@
+.search-results-page {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .centers-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .center-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .center-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .center-info h3 {
+    margin: 0;
+  }
+  
+  .center-info p {
+    margin: 5px 0;
+  }
+  

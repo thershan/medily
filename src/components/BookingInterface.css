@@ -1,0 +1,25 @@
+/* src/components/BookingInterface.css */
+.booking-interface {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .booking-interface h2 {
+    margin-bottom: 20px;
+  }
+  
+  .booking-interface label {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  .booking-interface input {
+    margin-top: 10px;
+  }
+  
+  .booking-interface button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  

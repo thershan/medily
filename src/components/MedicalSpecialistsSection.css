@@ -1,0 +1,27 @@
+.medical-specialists-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .specialists {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .specialist-card {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .specialist-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
