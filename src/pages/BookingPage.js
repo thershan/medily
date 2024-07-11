@@ -8,6 +8,7 @@ const BookingPage = () => {
 
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
+  const [isBooked, setIsBooked] = useState(false);
 
   if (!center || !center['Hospital Name']) {
     return <p>No center selected. Please go back and select a center.</p>;
@@ -30,6 +31,9 @@ const BookingPage = () => {
     const existingBookings = JSON.parse(localStorage.getItem('bookings')) || [];
     existingBookings.push(booking);
     localStorage.setItem('bookings', JSON.stringify(existingBookings));
+
+    // Set booking status to true
+    setIsBooked(true);
   };
 
   return (
@@ -37,9 +41,18 @@ const BookingPage = () => {
       <h2>Book an Appointment at {center['Hospital Name']}</h2>
       <p>{center['Address']}</p>
       <p>{center['City']}, {center['State']}, {center['ZIP Code']}</p>
-      <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
-      <input type="time" value={time} onChange={(e) => setTime(e.target.value)} />
-      <button onClick={handleBook} className="primary-button">Book Appointment</button>
+
+      {isBooked ? (
+        <div className="success-message">
+          <p>Appointment successfully booked at {center['Hospital Name']} on {date} at {time}.</p>
+        </div>
+      ) : (
+        <>
+          <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
+          <input type="time" value={time} onChange={(e) => setTime(e.target.value)} />
+          <button onClick={handleBook} className="primary-button">Book Appointment</button>
+        </>
+      )}
     </div>
   );
 };
